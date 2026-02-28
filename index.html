@@ -6,120 +6,120 @@
   <title>Zona waktu · Indonesia (WIB/WITA/WIT)</title>
   <style>
     * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
     body {
-      background: linear-gradient(145deg, #0b1f2e 0%, #1a3344 100%);
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
+        background: linear-gradient(145deg, #0b1f2e 0%, #1a3344 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
     }
 
     .container {
-      max-width: 900px;
-      width: 100%;
+        max-width: 900px;
+        width: 100%;
     }
 
     .time-card {
-      background: rgba(255, 255, 255, 0.06);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 215, 140, 0.25);
-      border-radius: 48px;
-      padding: 35px 30px;
-      margin-bottom: 28px;
-      box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.6);
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 215, 140, 0.25);
+        border-radius: 48px;
+        padding: 35px 30px;
+        margin-bottom: 28px;
+        box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.6);
     }
 
     .date-indonesia {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      gap: 15px;
-      color: #fadfad;
-      border-bottom: 1px dashed rgba(255, 215, 140, 0.3);
-      padding-bottom: 18px;
-      margin-bottom: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 15px;
+        color: #fadfad;
+        border-bottom: 1px dashed rgba(255, 215, 140, 0.3);
+        padding-bottom: 18px;
+        margin-bottom: 18px;
     }
 
     .hijri {
-      background: rgba(232, 184, 100, 0.15);
-      padding: 6px 18px;
-      border-radius: 60px;
-      font-size: 1.1rem;
-      color: #ffd98c;
-      border: 1px solid #ab8e4e50;
+        background: rgba(232, 184, 100, 0.15);
+        padding: 6px 18px;
+        border-radius: 60px;
+        font-size: 1.1rem;
+        color: #ffd98c;
+        border: 1px solid #ab8e4e50;
     }
 
     .main-clock {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
     }
 
     .gregorian {
-      font-size: 2rem;
-      font-weight: 500;
-      color: #e6e0d0;
-      background: #1f3e4f;
-      padding: 12px 28px;
-      border-radius: 70px;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #e6e0d0;
+        background: #1f3e4f;
+        padding: 12px 28px;
+        border-radius: 70px;
     }
 
     .live-time {
-      font-size: 4.2rem;
-      font-weight: 600;
-      font-family: 'JetBrains Mono', 'Courier New', monospace;
-      background: #1f2e38;
-      padding: 12px 35px;
-      border-radius: 70px;
-      color: #fee3a2;
-      letter-spacing: 8px;
-      text-shadow: 0 0 6px #ffb34760;
-      border: 1px solid #ffb45b;
+        font-size: 4.2rem;
+        font-weight: 600;
+        font-family: 'JetBrains Mono', 'Courier New', monospace;
+        background: #1f2e38;
+        padding: 12px 35px;
+        border-radius: 70px;
+        color: #fee3a2;
+        letter-spacing: 8px;
+        text-shadow: 0 0 6px #ffb34760;
+        border: 1px solid #ffb45b;
     }
 
     .prayer-box {
-      background: rgba(20, 35, 45, 0.9);
-      backdrop-filter: blur(10px);
-      border-radius: 40px;
-      padding: 30px 25px;
-      border: 1px solid #bfa26b40;
+        background: rgba(20, 35, 45, 0.9);
+        backdrop-filter: blur(10px);
+        border-radius: 40px;
+        padding: 30px 25px;
+        border: 1px solid #bfa26b40;
     }
 
     .location-panel {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 35px;
-      background: #0e222e;
-      padding: 18px 22px;
-      border-radius: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 35px;
+        background: #0e222e;
+        padding: 18px 22px;
+        border-radius: 90px;
     }
 
     .zone-badge {
-      display: flex;
-      gap: 8px;
+        display: flex;
+        gap: 8px;
     }
 
     .wib, .wita, .wit {
-      padding: 8px 20px;
-      border-radius: 60px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      background: #283b46;
-      color: #cec09c;
+        padding: 8px 20px;
+        border-radius: 60px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        background: #283b46;
+        color: #cec09c;
     }
 
     .wib.active { background: #2b6a42; color: white; box-shadow: 0 0 12px #5cb85c; }
@@ -127,150 +127,176 @@
     .wit.active { background: #aa4e4e; color: white; box-shadow: 0 0 12px #e99797; }
 
     select {
-      background: #1f404f;
-      border: 1px solid #dba959;
-      color: #faeacb;
-      font-size: 1.15rem;
-      padding: 14px 30px 14px 25px;
-      border-radius: 70px;
-      appearance: none;
-      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f5cb8b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
-      background-repeat: no-repeat;
-      background-position: right 18px center;
-      background-size: 20px;
-      min-width: 250px;
-      cursor: pointer;
+        background: #1f404f;
+        border: 1px solid #dba959;
+        color: #faeacb;
+        font-size: 1.15rem;
+        padding: 14px 30px 14px 25px;
+        border-radius: 70px;
+        appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f5cb8b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 18px center;
+        background-size: 20px;
+        min-width: 250px;
+        cursor: pointer;
     }
     select:hover { border-color: #ffc96e; background-color: #295464; }
 
     .prayer-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 15px;
-      margin: 35px 0 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 15px;
+        margin: 35px 0 10px;
     }
 
     .prayer-item {
-      background: #1d3643;
-      border-radius: 30px;
-      padding: 18px 5px;
-      text-align: center;
-      border: 1px solid #6d8f9f30;
-      box-shadow: 0 6px 0 #0a1a24;
+        background: #1d3643;
+        border-radius: 30px;
+        padding: 18px 5px;
+        text-align: center;
+        border: 1px solid #6d8f9f30;
+        box-shadow: 0 6px 0 #0a1a24;
     }
 
     .prayer-name {
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: #fedb9f;
-      margin-bottom: 10px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #fedb9f;
+        margin-bottom: 10px;
     }
 
     .prayer-time {
-      font-size: 2rem;
-      font-weight: 600;
-      font-family: 'JetBrains Mono', monospace;
-      background: #0d262f;
-      padding: 10px 5px;
-      border-radius: 60px;
-      color: #fff2d6;
-      letter-spacing: 2px;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: 'JetBrains Mono', monospace;
+        background: #0d262f;
+        padding: 10px 5px;
+        border-radius: 60px;
+        color: #fff2d6;
+        letter-spacing: 2px;
     }
 
     .info-foot {
-      display: flex;
-      justify-content: space-between;
-      color: #bcb09b;
-      margin-top: 25px;
-      background: #10232e;
-      padding: 12px 20px;
-      border-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        color: #bcb09b;
+        margin-top: 25px;
+        background: #10232e;
+        padding: 12px 20px;
+        border-radius: 50px;
     }
 
     .method-badge {
-      background: #c59b4b20;
-      padding: 5px 15px;
-      border-radius: 30px;
-      border: 1px solid #8f7a4e;
+        background: #c59b4b20;
+        padding: 5px 15px;
+        border-radius: 30px;
+        border: 1px solid #8f7a4e;
+    }
+
+    .contact-icons {
+        display: flex;
+        gap: 1.5rem;
+        margin: 1rem 0;
+        font-size: 1.8rem;
+        -ms-flex-item-align: left;
+    }
+
+    .contact-icons a {
+        color: #ffdcaa;
+        text-decoration: none;
     }
 
     footer {
-      text-align: center;
-      margin-top: 30px;
-      color: #7c8e99;
+        text-align: right;
+        margin-top: 30px;
+        color: #7c8e99;
     }
   </style>
 </head>
 <body>
-<div class="container">
-
-  <!-- KOTAK WAKTU DIGITAL -->
-  <div class="time-card">
-    <div class="date-indonesia">
-      <span id="hariIndonesia">Selasa, 28 Februari 2025</span>
-      <span class="hijri" id="hijriah">14 Sya‘ban 1446 H</span>
+    <div class="container">
+        <div class="time-card">
+            <div class="date-indonesia">
+                <span id="hariIndonesia">Selasa, 28 Februari 2025</span>
+                <span class="hijri" id="hijriah">14 Sya‘ban 1446 H</span>
+            </div>
+            <div class="main-clock">
+                <div class="gregorian" id="tanggalGregorian">28 Feb 2025</div>
+                <div class="live-time" id="jamDigital">14:05:09</div>
+            </div>
+        </div>
+        <div class="prayer-box">
+            <div class="location-panel">
+                <select id="lokasiSelect">
+                    <option value="-6.2088,106.8456,7,WIB">🇮🇩 Jakarta Pusat (WIB)</option>
+                    <option value="-7.2504,112.7688,7,WIB">Surabaya, Jawa Timur (WIB)</option>
+                    <option value="-6.9175,107.6191,7,WIB">Bandung, Jawa Barat (WIB)</option>
+                    <option value="-3.3271,114.5945,8,WITA">Banjarmasin, Kalsel (WITA)</option>
+                    <option value="-8.6705,115.2126,8,WITA">Denpasar, Bali (WITA)</option>
+                    <option value="-5.1477,119.4322,8,WITA">Makassar, Sulsel (WITA)</option>
+                    <option value="-2.5309,140.7181,9,WIT">Jayapura, Papua (WIT)</option>
+                    <option value="-3.6964,128.1798,9,WIT">Ambon, Maluku (WIT)</option>
+                    <option value="0.5071,101.4478,7,WIB">Pekanbaru (WIB)</option>
+                    <option value="-7.9797,110.8290,7,WIB">Wonogiri, Jateng (WIB)</option>
+                    <option value="-0.0263,109.3425,7,WIB">Pontianak (WIB)</option>
+                    <option value="-8.1126,115.0881,8,WITA">Singaraja, Bali (WITA)</option>
+                    <option value="-8.4665,118.7260,8,WITA">Bima, NTB (WITA)</option>
+                    <option value="-2.2161,113.9133,7,WIB">Palangkaraya (WIB)</option>
+                    <option value="-4.0235,122.5137,8,WITA">Kendari, Sultra (WITA)</option>
+                    <option value="-3.0011,120.1964,8,WITA">Palopo, Sulsel (WITA)</option>
+                    <option value="-1.2698,116.8278,8,WITA">Balikpapan (WITA)</option>
+                    <option value="-2.2126,117.9872,8,WITA">Mamuju, Sulbar (WITA)</option>
+                    <option value="-3.3819,135.4713,9,WIT">Nabire, Papua (WIT)</option>
+                    <option value="-3.6554,128.1904,9,WIT">Passo, Maluku (WIT)</option>
+                </select>
+                <div class="zone-badge">
+                    <span class="wib" id="zoneWIB">WIB (UTC+7)</span>
+                    <span class="wita" id="zoneWITA">WITA (UTC+8)</span>
+                    <span class="wit" id="zoneWIT">WIT (UTC+9)</span>
+                </div>
+            </div>
+            <div class="prayer-grid" id="prayerGrid">
+                <div class="prayer-item"><div class="prayer-name">Subuh</div><div class="prayer-time" id="fajrTime">--:--</div></div>
+                <div class="prayer-item"><div class="prayer-name">Dzuhur</div><div class="prayer-time" id="dhuhrTime">--:--</div></div>
+                <div class="prayer-item"><div class="prayer-name">Ashar</div><div class="prayer-time" id="asrTime">--:--</div></div>
+                <div class="prayer-item"><div class="prayer-name">Maghrib</div><div class="prayer-time" id="maghribTime">--:--</div></div>
+                <div class="prayer-item"><div class="prayer-name">Isya</div><div class="prayer-time" id="ishaTime">--:--</div></div>
+            </div>
+            <div class="info-foot">
+                <span class="method-badge">Metode: MWL + ihtiyat 2 menit</span>
+                <span id="timezoneInfo">Zona: WIB (UTC+7)</span>
+            </div>
+        </div>
+        <div class="contact-icons">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="far fa-envelope"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <footer>&copy; 2026 times. All right reserved.</footer>
     </div>
-    <div class="main-clock">
-      <div class="gregorian" id="tanggalGregorian">28 Feb 2025</div>
-      <div class="live-time" id="jamDigital">14:05:09</div>
-    </div>
-  </div>
-
-  <!-- KOTAK JADWAL SHOLAT -->
-  <div class="prayer-box">
-    <div class="location-panel">
-      <select id="lokasiSelect">
-        <!-- Data hasil riset koordinat & zona waktu Indonesia -->
-        <option value="-6.2088,106.8456,7,WIB">🇮🇩 Jakarta Pusat (WIB)</option>
-        <option value="-7.2504,112.7688,7,WIB">Surabaya, Jawa Timur (WIB)</option>
-        <option value="-6.9175,107.6191,7,WIB">Bandung, Jawa Barat (WIB)</option>
-        <option value="-3.3271,114.5945,8,WITA">Banjarmasin, Kalsel (WITA)</option>
-        <option value="-8.6705,115.2126,8,WITA">Denpasar, Bali (WITA)</option>
-        <option value="-5.1477,119.4322,8,WITA">Makassar, Sulsel (WITA)</option>
-        <option value="-2.5309,140.7181,9,WIT">Jayapura, Papua (WIT)</option>
-        <option value="-3.6964,128.1798,9,WIT">Ambon, Maluku (WIT)</option>
-        <option value="0.5071,101.4478,7,WIB">Pekanbaru (WIB)</option>
-        <option value="-7.9797,110.8290,7,WIB">Wonogiri, Jateng (WIB)</option>
-        <option value="-0.0263,109.3425,7,WIB">Pontianak (WIB)</option>
-        <option value="-8.1126,115.0881,8,WITA">Singaraja, Bali (WITA)</option>
-        <option value="-8.4665,118.7260,8,WITA">Bima, NTB (WITA)</option>
-        <option value="-2.2161,113.9133,7,WIB">Palangkaraya (WIB)</option>
-        <option value="-4.0235,122.5137,8,WITA">Kendari, Sultra (WITA)</option>
-        <option value="-3.0011,120.1964,8,WITA">Palopo, Sulsel (WITA)</option>
-        <option value="-1.2698,116.8278,8,WITA">Balikpapan (WITA)</option>
-        <option value="-2.2126,117.9872,8,WITA">Mamuju, Sulbar (WITA)</option>
-        <option value="-3.3819,135.4713,9,WIT">Nabire, Papua (WIT)</option>
-        <option value="-3.6554,128.1904,9,WIT">Passo, Maluku (WIT)</option>
-      </select>
-      <div class="zone-badge">
-        <span class="wib" id="zoneWIB">WIB (UTC+7)</span>
-        <span class="wita" id="zoneWITA">WITA (UTC+8)</span>
-        <span class="wit" id="zoneWIT">WIT (UTC+9)</span>
-      </div>
-    </div>
-
-    <div class="prayer-grid" id="prayerGrid">
-      <div class="prayer-item"><div class="prayer-name">Subuh</div><div class="prayer-time" id="fajrTime">--:--</div></div>
-      <div class="prayer-item"><div class="prayer-name">Dzuhur</div><div class="prayer-time" id="dhuhrTime">--:--</div></div>
-      <div class="prayer-item"><div class="prayer-name">Ashar</div><div class="prayer-time" id="asrTime">--:--</div></div>
-      <div class="prayer-item"><div class="prayer-name">Maghrib</div><div class="prayer-time" id="maghribTime">--:--</div></div>
-      <div class="prayer-item"><div class="prayer-name">Isya</div><div class="prayer-time" id="ishaTime">--:--</div></div>
-    </div>
-
-    <div class="info-foot">
-      <span class="method-badge">⚙️ Metode: MWL + ihtiyat 2 menit</span>
-      <span id="timezoneInfo">Zona: WIB (UTC+7)</span>
-    </div>
-  </div>
-  <footer>⏱️ Real‑time clock · Perhitungan astronomis presisi</footer>
-</div>
 
 <!-- PRAYTIMES.JS (versi terbaru 2025, diembed langsung agar tidak bergantung CDN) -->
 <script>
 //--------------------- PrayTimes.js v3.2 (Copyright PrayTimes.org) ----------------------
-// License: MIT (https://opensource.org/licenses/MIT)
-// Sumber: https://github.com/praytimes/praytimes
-// (Dikemas dalam satu blok agar kompatibel)
+// License  : MIT (https://opensource.org/licenses/MIT)
+// Sumber   : https://github.com/zarrabi/praytime
+// Search   : https://praytimes.org/docs/code
+
+/*
+   -------------------- times - Integrated Prayer Times ----------------------
+   Developed by  : M. Syalman Al Farizi (Neverlabs)
+   GitHub        : https://github.com/neveerlabs/ And https://github.com/nflora-ux/
+   Contact       : neveerlabs@gmail.com
+   Version       : v1.3.1
+   Dependencies  : PrayTimes.js v3.2 (https://praytimes.org)
+   License       : MIT
+   Powered by    : DeepSeek-V3
+
+   Terima kasih kepada Hamid Zarrabi-Zadeh atas PrayTimes.js.
+*/
 (function(global) {
 'use strict';
 
@@ -368,7 +394,6 @@ class PrayTime {
         this.method(method);
     }
 
-    //---------------------- Compute Times -----------------------
     computeTimes() {
         let times = {
             fajr: 5,
@@ -440,7 +465,6 @@ class PrayTime {
         return Math[rounding](timestamp / OneMinute) * OneMinute;
     }
 
-    //---------------------- Calculation Functions -----------------------
     sunPosition(time) {
         const lng = this.settings.location[1];
         const D = this.utcTime / 864e5 - 10957.5 + this.value(time) / 24 - lng / 360;
@@ -475,7 +499,6 @@ class PrayTime {
         return -this.arccot(shadowFactor + this.tan(Math.abs(lat - decl)));
     }
 
-    //---------------------- Higher Latitudes -----------------------
     adjustHighLats(times) {
         const params = this.settings;
         if (params.highLats == 'None') return;
@@ -503,7 +526,6 @@ class PrayTime {
         return time;
     }
 
-    //---------------------- Formatting Functions ---------------------
     formatTimes(times) {
         for (let i in times)
             times[i] = this.formatTime(times[i]);
@@ -530,12 +552,10 @@ class PrayTime {
         return format == '12H' ? str.replace(/ ?[AP]M/, '') : str;
     }
 
-    //---------------------- Misc Functions -----------------------
     value(str) { return +String(str).split(/[^0-9.+-]/)[0]; }
     isMin(str) { return String(str).indexOf('min') != -1; }
     mod(a, b) { return ((a % b) + b) % b; }
 
-    //--------------------- Trigonometry -----------------
     dtr = (d) => d * Math.PI / 180;
     rtd = (r) => r * 180 / Math.PI;
     sin = (d) => Math.sin(this.dtr(d));
@@ -554,7 +574,6 @@ global.PrayTime = PrayTime;
 
 <script>
 (function() {
-    // Elemen DOM
     const hijriSpan = document.getElementById('hijriah');
     const hariIndo = document.getElementById('hariIndonesia');
     const tanggalGreg = document.getElementById('tanggalGregorian');
@@ -569,17 +588,11 @@ global.PrayTime = PrayTime;
     const zoneWIT = document.getElementById('zoneWIT');
     const timezoneInfo = document.getElementById('timezoneInfo');
     const lokasiSelect = document.getElementById('lokasiSelect');
-
-    // Variabel global
     let currentLat = -6.2088, currentLng = 106.8456, currentTzOffset = 7, currentZone = 'WIB';
-
-    // Utility: two digits
     const twoDigits = (num) => String(num).padStart(2, '0');
 
-    // Update jam digital & tanggal
     function updateClock() {
         const now = new Date();
-        // Hari Indonesia
         const dayNames = ['Ahad', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
         const monthNames = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
         const dayName = dayNames[now.getDay()];
@@ -589,27 +602,24 @@ global.PrayTime = PrayTime;
         hariIndo.innerText = `${dayName}, ${date} ${month} ${year}`;
         tanggalGreg.innerText = `${twoDigits(date)} ${month.slice(0,3)} ${year}`;
 
-        // Jam digital
         const hh = twoDigits(now.getHours());
         const mm = twoDigits(now.getMinutes());
         const ss = twoDigits(now.getSeconds());
         jamDigital.innerText = `${hh}:${mm}:${ss}`;
 
-        // Hijriah sederhana (approximation)
         try {
             const hijriStr = now.toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric', calendar: 'islamic' });
             hijriSpan.innerText = hijriStr;
         } catch {
-            hijriSpan.innerText = '1446 H'; // fallback
+            hijriSpan.innerText = '1446 H';
         }
     }
     setInterval(updateClock, 200);
     updateClock();
 
-    // Fungsi hitung jadwal sholat
     function hitungJadwal(lat, lng, tzOffset, zoneLabel) {
         try {
-            const pray = new PrayTime('MWL');          // Metode Muslim World League
+            const pray = new PrayTime('MWL');
             pray.adjust({ fajr: 20, isha: 18 });       // Imsak 20°, Isya 18° (sesuai Kemenang)
             pray.tune({ fajr: 2, dhuhr: 2, asr: 2, maghrib: 2, isha: 2 }); // ihtiyat 2 menit
 
@@ -617,11 +627,8 @@ global.PrayTime = PrayTime;
             const year = now.getFullYear();
             const month = now.getMonth() + 1;
             const day = now.getDate();
-
-            // Dapatkan objek waktu
             const times = pray.getTimes([year, month, day], [lat, lng], tzOffset, 0, '24h');
 
-            // times berisi properti lowercase: fajr, sunrise, dhuhr, asr, maghrib, isha, midnight
             fajrTime.innerText = times.fajr || '--:--';
             dhuhrTime.innerText = times.dhuhr || '--:--';
             asrTime.innerText = times.asr || '--:--';
@@ -641,12 +648,10 @@ global.PrayTime = PrayTime;
 
         } catch (e) {
             console.error('Gagal hitung jadwal:', e);
-            // Fallback
             fajrTime.innerText = dhuhrTime.innerText = asrTime.innerText = maghribTime.innerText = ishaTime.innerText = '--:--';
         }
     }
 
-    // Load dari dropdown
     function loadSelectedLocation() {
         const selected = lokasiSelect.value;
         const parts = selected.split(',');
@@ -657,7 +662,7 @@ global.PrayTime = PrayTime;
             currentZone = parts[3].trim();
             hitungJadwal(currentLat, currentLng, currentTzOffset, currentZone);
         } else {
-            hitungJadwal(-6.2088, 106.8456, 7, 'WIB'); // fallback
+            hitungJadwal(-6.2088, 106.8456, 7, 'WIB');
         }
     }
 
